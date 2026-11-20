@@ -54,7 +54,7 @@ export default function Hero({ profile, highlights = [], socials = {} }) {
             {/* Primary CTAs */}
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3.5 pt-1">
               <a
-                href="/api/resume/download"
+                href="/Mohammad-Matin-Azimi-CV.pdf"
                 download="Mohammad-Matin-Azimi-CV.pdf"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-xl bg-gradient-to-r from-sky-400 to-indigo-500 hover:from-sky-300 hover:to-indigo-400 text-slate-950 font-semibold text-sm sm:text-base shadow-lg shadow-sky-500/20 transition-all hover:-translate-y-0.5"
               >

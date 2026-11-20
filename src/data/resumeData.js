@@ -192,4 +192,4 @@ const resumeData = {
   ],
 };
 
-module.exports = resumeData;
+export default resumeData;

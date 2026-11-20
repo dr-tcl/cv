@@ -56,7 +56,7 @@ export default function Navbar({ shortName = "Matin Azimi" }) {
 
         <div className="hidden md:flex items-center gap-3">
           <a
-            href="/api/resume/download"
+            href="/Mohammad-Matin-Azimi-CV.pdf"
             download="Mohammad-Matin-Azimi-CV.pdf"
             className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-sky-500/15 hover:bg-sky-500/25 border border-sky-400/30 text-sky-300 text-sm font-medium transition-all hover:shadow-md hover:shadow-sky-500/10"
           >
@@ -88,9 +88,9 @@ export default function Navbar({ shortName = "Matin Azimi" }) {
             </a>
           ))}
           <a
-            href="/api/resume/download"
+            href="/Mohammad-Matin-Azimi-CV.pdf"
             download="Mohammad-Matin-Azimi-CV.pdf"
-            onClick={() => setOpen(false)}
+            onClick={() => setTimeout(() => setOpen(false), 150)}
             className="mt-2 flex items-center justify-center gap-2 w-full px-4 py-2.5 rounded-xl bg-gradient-to-r from-sky-500 to-indigo-500 text-slate-950 font-semibold text-sm"
           >
             <Download className="w-4 h-4" />

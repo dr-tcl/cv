@@ -6,12 +6,12 @@ import ConsultingSection from "@/components/ConsultingSection";
 import SkillsSection from "@/components/SkillsSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
-import { getResumeData } from "@/lib/api";
+import { getResumeData } from "@/lib/resume";
 
 export const dynamic = "force-dynamic";
 
-export default async function HomePage() {
-  const data = await getResumeData();
+export default function HomePage() {
+  const data = getResumeData();
 
   return (
     <div className="min-h-screen bg-[#060911] bg-grid-pattern text-slate-200">

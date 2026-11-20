@@ -195,7 +195,7 @@ export default function ContactSection({ profile, socials = {} }) {
                 </p>
               </div>
               <a
-                href="/api/resume/download"
+                href="/Mohammad-Matin-Azimi-CV.pdf"
                 download="Mohammad-Matin-Azimi-CV.pdf"
                 className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-sky-500/15 hover:bg-sky-500/25 border border-sky-400/35 text-sky-300 text-sm font-semibold shrink-0 transition-all"
               >

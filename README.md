@@ -1,24 +1,28 @@
 # Mohammad Matin Azimi — Resume Website
 
-A dark-themed, responsive resume website with separated **Next.js (JavaScript)** frontend and **Node.js / Express (JavaScript)** backend.
+A dark-themed, responsive resume website built with **Next.js (JavaScript)** including built-in API routes for resume data, PDF download, and contact form submissions, packaged with a single `Dockerfile` and `docker-compose.yml`.
 
-## Structure
+## Features
 
-- `backend/` — Express API serving structured resume data, `.env`-driven social links, PDF resume download, and contact form submissions.
-- `frontend/` — Next.js App Router UI with responsive dark design, framed portrait, interactive sections, and API rewrites.
-- `.env` — Configure `EMAIL`, `INSTAGRAM_URL`, `TELEGRAM_URL`, and `LINKEDIN_URL`.
+- Responsive dark UI with framed portrait (`public/images/matin-portrait.jpg`)
+- Built-in API routes:
+  - `GET /api/health`
+  - `GET /api/resume`
+  - `GET /api/resume/download`
+  - `POST /api/contact`
+- `.env`-driven contact email & social links (with built-in defaults)
 
 ## Run with Docker Compose
 
-1. Update your social links in `.env`:
+1. Review or update `.env`:
    ```env
    EMAIL=m.matinazimii@gmail.com
    INSTAGRAM_URL=https://instagram.com/matin_swim
    TELEGRAM_URL=https://t.me/matin_swim
    LINKEDIN_URL=https://www.linkedin.com/in/matin-azimi/
    ```
-2. Build and start both services:
+2. Build and start:
    ```bash
    docker compose up --build -d
    ```
-3. Open `http://localhost:3000` in your browser (or `http://localhost:5000/api/health` for the backend).
+3. Open `http://localhost:3000` in your browser.

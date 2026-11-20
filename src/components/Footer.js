@@ -11,7 +11,7 @@ export default function Footer({ name = "Mohammad Matin Azimi" }) {
         </p>
 
         <a
-          href="/api/resume/download"
+          href="/Mohammad-Matin-Azimi-CV.pdf"
           download="Mohammad-Matin-Azimi-CV.pdf"
           className="inline-flex items-center gap-2 text-xs sm:text-sm text-slate-400 hover:text-sky-400 transition-colors"
         >
